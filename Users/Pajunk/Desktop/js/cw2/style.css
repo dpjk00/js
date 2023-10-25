@@ -1,0 +1,41 @@
+#slider {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+}
+#slider .slides {
+    display: flex;
+    animation-name: next;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.nav-slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-slides ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-slides li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@keyframes previous {
+    100% { background-position: 600px; }
+}
+
+@keyframes next {
+    100% { background-position: -600px; }
+}
