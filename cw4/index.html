@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 4 - Notatki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form class="create-note">
+            <label for="title">Tytuł:</label>
+            <input type="text" id="title" required>
+            <label for="content">Treść:</label>
+            <textarea id="content" required></textarea>
+            <label for="tags">Tagi:</label>
+            <input type="text" id="tags">
+            <div>
+                <label for="color">Kolor:</label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <label for="pin">Przypnij:</label>
+                <input type="checkbox" id="pin">
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="add_note()">Dodaj</button>
+            </div>
+        </form>
+        <h2>Notatki</h2>
+        <input type="text" id="search" oninput="search_notes()">
+        <div id="notes"></div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
