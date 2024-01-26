@@ -1,0 +1,35 @@
+*, html, body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  border: 1px solid #000;
+}
+
+button {
+  position: absolute;
+  background: crimson;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  top: 20px;
+}
+
+input {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+}
+
+.start {
+  left: 20px;
+}
+
+.reset {
+  left: 120px;
+}
