@@ -13,7 +13,7 @@ header {
 }
 
 .bpm {
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -50,23 +50,12 @@ audio {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    justify-content: space-between;
 }
 
-.add-button {
-    width: 120px;
-    height: 60px;
-    background: crimson;
-    border: none;
-    font-size: 18px;
-    color: white
+.btn-start {
+  padding: 20px;
 }
 
-.delete-button {
-    width: 20px;
-    height: 20px;
-    background: red;
-    border: none;
-    margin-right: 50px;
-    cursor: pointer;
+h1, p {
+ color: white;
 }

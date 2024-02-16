@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <p class="bpm">30 BPM</p>
+        <button class="btn-start">Start</button>
+        <p class="p-start"></p>
+        <button class="play">Play Melody From All Channels</button>
     </header>
     <main>
         <div class="audio-container">
@@ -23,9 +25,33 @@
         </div>
         <div class="channel-container">
             <div class="channel-content">
-
+              <div class="channel">
+                <input name="c1" class="c1" type="checkbox">
+                Channel 1
+                <button class="channel-play1">Play</button>
+              </div>
+              <div class="channel">
+                <input name="c2" class="c2" type="checkbox">
+                Channel 2
+                <button class="channel-play2">Play</button>
+              </div>
+              <div class="channel">
+                <input name="c3" class="c3" type="checkbox">
+                Channel 3
+                <button class="channel-play3">Play</button>
+              </div>
+              <div class="channel">
+                <input name="c4" class="c4" type="checkbox">
+                Channel 4
+                <button class="channel-play4">Play</button>
+              </div>
             </div>
-            <button class="add-button" onclick="add_channel()">Add Channel</button>
+            <div>
+              <h1>Opis Działania</h1>
+              <p>zaznaczony checkbox oznacza, że na danym kanale będzie nagrywana melodia</p>
+              <p>aby nagrać melodie należy zaznaczyć checkbox i kliknać start na górze strony</p>
+              <p>play na kafelce kanału gra melodię z danego kanału</p>
+            </div>
         </div>
     </main>
     <script src="main.js"></script>
